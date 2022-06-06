@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62d8866f4551e2c4da05b1174c1a66ff, type: 3}
+  m_Name: Papeda
+  m_EditorClassIdentifier: 
+  nama: Papeda
+  sprite: {fileID: 21300000, guid: 6e21c716b22fac34caed68598ac484a3, type: 3}
+  description: Papeda adalah makanan berupa bubur sagu khas Maluku dan Papua yang
+    biasanya disajikan dengan ikan tongkol atau mubara yang dibumbui dengan kunyit.
+  harga: 10000
+  id: Papeda
