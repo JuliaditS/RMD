@@ -10,6 +10,7 @@ public class PlayfabManager : MonoBehaviour
     void Start()
     {
         Login();
+        GetUserDat();
     }
 
     // Update is called once per frame
@@ -19,6 +20,29 @@ public class PlayfabManager : MonoBehaviour
             CreateAccount = true
         };
         PlayFabClientAPI.LoginWithCustomID(request, OnSuccess, OnError);
+    }
+
+    void GetUserDat(){
+        int bintang=0,uang=0,level=0;
+        PlayFabClientAPI.GetUserData(new GetUserDataRequest(), 
+        result=>{
+            Debug.Log("Recieved user data!");
+            if (result.Data != null){
+                uang=int.Parse(result.Data["SaveUang"].Value);
+                level=int.Parse(result.Data["levelReach"].Value);
+                Debug.Log(level);
+                for (int i=1;i<level;i++){
+                    bintang=int.Parse(result.Data["SaveStars" + i].Value);
+                    Debug.Log(bintang);
+                    PlayerPrefs.SetInt("SaveStars" + i, bintang);
+                }
+            }else 
+                Debug.Log("No Data");
+        }, OnError);
+
+        PlayerPrefs.SetInt("levelReach", level);
+        PlayerPrefs.SetInt("SaveUang", uang);
+        PlayerPrefs.Save();
     }
 
     void OnSuccess(LoginResult result) {
