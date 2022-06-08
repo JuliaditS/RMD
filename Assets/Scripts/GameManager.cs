@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using PlayFab;
+using PlayFab.ClientModels;
 
 public class GameManager : MonoBehaviour
 {
@@ -43,16 +45,47 @@ public class GameManager : MonoBehaviour
 
     public int getBintang(int levelNumber)
     {
-        return PlayerPrefs.GetInt("SaveStars" + levelNumber);
+        //return PlayerPrefs.GetInt("SaveStars" + levelNumber);
+
+        int bintang=0;
+        PlayFabClientAPI.GetUserData(new GetUserDataRequest(), 
+        result=>{
+            Debug.Log("Recieved user data!");
+            if (result.Data != null && result.Data.ContainsKey("SaveStars" + levelNumber))
+                bintang=int.Parse(result.Data["SaveStars" + levelNumber].Value);
+            else 
+                Debug.Log("No Data");
+        }, OnError);
+        return bintang;
     }
 
     public void SaveData(int levelNumber)
     {
-        PlayerPrefs.SetInt("levelReach", levelNumber + 1);
-        PlayerPrefs.SetInt("SaveUang", uang + PlayerPrefs.GetInt("SaveUang"));
-        PlayerPrefs.SetInt("SaveStars" + levelNumber, getStars);
-        PlayerPrefs.Save();
+        //PlayerPrefs.SetInt("levelReach", levelNumber + 1);
+        //PlayerPrefs.SetInt("SaveUang", uang + PlayerPrefs.GetInt("SaveUang"));
+        //PlayerPrefs.SetInt("SaveStars" + levelNumber, getStars);
+        //PlayerPrefs.Save();
+        int levelreach = levelNumber + 1;
+        int saveuang = uang + PlayerPrefs.GetInt("SaveUang");
+
+        var request = new UpdateUserDataRequest {
+            Data = new Dictionary<string, string>{
+                {"levelReach", levelreach.ToString()},
+                {"SaveUang", saveuang.ToString()},
+                {"SaveStars" + levelNumber, getStars.ToString()}
+            }
+        };
+        PlayFabClientAPI.UpdateUserData(request, OnDataSend, OnError);
+
     }
 
+    void OnDataSend(UpdateUserDataResult result){
+        Debug.Log("Successful user data send!");
+    }
+
+    void OnError(PlayFabError error) {
+        Debug.Log("Error while logging in/creating account!");
+        Debug.Log(error.GenerateErrorReport());
+    }
     //
 }

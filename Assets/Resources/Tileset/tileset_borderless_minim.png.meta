@@ -138,7 +138,7 @@ TextureImporter:
       213: 4468755990434626014
     second: tileset_borderless_minim_44
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -158,6 +158,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -166,9 +168,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -189,9 +191,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -1187,6 +1193,52 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      tileset_borderless_minim_26: 6886699285882370859
+      tileset_borderless_minim_41: 8860759271326836989
+      tileset_borderless_minim_3: -499249767843208316
+      tileset_borderless_minim_40: 1970800503493281866
+      tileset_borderless_minim_11: 2819269889369385815
+      tileset_borderless_minim_35: -9010021547200306754
+      tileset_borderless_minim_22: -4430634778158351759
+      tileset_borderless_minim_0: -3890545174468247960
+      tileset_borderless_minim_29: -7753779143816160457
+      tileset_borderless_minim_43: 6833538209222317683
+      tileset_borderless_minim_4: -1261997924922738058
+      tileset_borderless_minim_12: 8853530370445670285
+      tileset_borderless_minim_25: 7134041243857601039
+      tileset_borderless_minim_13: -798851360749345541
+      tileset_borderless_minim_24: 8187529707240766147
+      tileset_borderless_minim_23: -4940183712542406298
+      tileset_borderless_minim_39: -3272525205561431271
+      tileset_borderless_minim_15: 5246148204434132742
+      tileset_borderless_minim_14: 102891416071377410
+      tileset_borderless_minim_20: 2983132031013292695
+      tileset_borderless_minim_9: -954037871012170595
+      tileset_borderless_minim_1: 222184458656121767
+      tileset_borderless_minim_36: -8514956792745692596
+      tileset_borderless_minim_28: 2139450753896840356
+      tileset_borderless_minim_16: -5432779019428877284
+      tileset_borderless_minim_27: 3155527585827485699
+      tileset_borderless_minim_30: 8197939763254902543
+      tileset_borderless_minim_32: -284743408663665583
+      tileset_borderless_minim_33: -8097946453156001185
+      tileset_borderless_minim_10: -8935199625024342340
+      tileset_borderless_minim_18: -3838450099494654153
+      tileset_borderless_minim_37: 1546741770096086926
+      tileset_borderless_minim_42: 2397525422858791095
+      tileset_borderless_minim_17: 412037824682012531
+      tileset_borderless_minim_38: -8281440502626588882
+      tileset_borderless_minim_44: 4468755990434626014
+      tileset_borderless_minim_5: 4521733967226620169
+      tileset_borderless_minim_19: 5598674739608677694
+      tileset_borderless_minim_31: -1721767130905485476
+      tileset_borderless_minim_6: -1715464540026527740
+      tileset_borderless_minim_21: 5007471222752670965
+      tileset_borderless_minim_34: -8235178583971853829
+      tileset_borderless_minim_8: 8208595631965561002
+      tileset_borderless_minim_2: -8153893886834306544
+      tileset_borderless_minim_7: 4147270278707317668
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

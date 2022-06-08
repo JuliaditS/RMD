@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d0199c11aa6f514784c5c69cd8378d8, type: 3}
+  m_Name: PlayFabEditorPrefsSO
+  m_EditorClassIdentifier: 
+  DevAccountEmail: juliaditsyahputra@gmail.com
+  DevAccountToken: f9qf7n5k5equ3fnbetux86mg4sb641j6f7yz7szdn9esiqfmceptnw5x1mxpeuh6aazm137csqqkrwo4a7dcsayikjaet3et6dpm1q16edb3yqectn1m8mjjo4w3jdic7c8t51tiasy9oo19hgjx5gcfqr87en6sqrfbony5z6geydg1ug63urmx6hrftzp31xatn4en
+  SelectedStudio: Rumah Makan Delivery
+  SdkPath: Assets/PlayFabSDK
+  EdExPath: 
+  LocalCloudScriptPath: 
+  PanelIsShown: 0
+  curMainMenuIdx: 1
+  curSubMenuIdx: 0

@@ -207,7 +207,7 @@ TextureImporter:
       213: -8021066807612987199
     second: tileset_main_67
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -227,6 +227,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -236,8 +238,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -258,9 +260,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -1739,6 +1745,75 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      tileset_main_52: -2733209710609332071
+      tileset_main_3: -5920222853211970683
+      tileset_main_13: -9107332740215795285
+      tileset_main_55: -609809146073615679
+      tileset_main_62: 6144521012125520447
+      tileset_main_37: 4187363617114406059
+      tileset_main_63: -9056578608163512259
+      tileset_main_43: -788386275847395875
+      tileset_main_44: -5053712301722212601
+      tileset_main_23: -2861301912537351834
+      tileset_main_34: -4740270892304502704
+      tileset_main_1: 8914377794724248415
+      tileset_main_53: 9181758894180004842
+      tileset_main_51: 2998852827656065555
+      tileset_main_38: 3327793009748755640
+      tileset_main_36: 4793844226766830553
+      tileset_main_45: 1033675922281919221
+      tileset_main_19: -4883236530540649479
+      tileset_main_40: 4837508446230672604
+      tileset_main_2: 975726026604220588
+      tileset_main_14: -8410114757688102176
+      tileset_main_35: 6705847476384429775
+      tileset_main_56: 8775201559559372349
+      tileset_main_60: -2058913692445000836
+      tileset_main_67: -8021066807612987199
+      tileset_main_20: 6633840318452459888
+      tileset_main_31: 617616651471533323
+      tileset_main_42: 8356733981673444593
+      tileset_main_29: 3381437329879836503
+      tileset_main_4: -1095819001279895145
+      tileset_main_24: -756362933305682017
+      tileset_main_39: -3234517571552566496
+      tileset_main_59: 9009092796286853155
+      tileset_main_41: -256603478928050930
+      tileset_main_22: 2026769457792351269
+      tileset_main_25: -6423633238073287655
+      tileset_main_15: 3085453732333286058
+      tileset_main_27: -6962659979712871922
+      tileset_main_9: -6963970503893104294
+      tileset_main_33: -2877630519360037437
+      tileset_main_30: 6161169144165751117
+      tileset_main_6: -5875007557442039344
+      tileset_main_58: 5448619210885190641
+      tileset_main_66: -3095798830173343787
+      tileset_main_65: 6493138314579929941
+      tileset_main_26: -3785792846342249653
+      tileset_main_28: -6883205112879887362
+      tileset_main_46: -4318738692850201064
+      tileset_main_61: -5785945149478062618
+      tileset_main_47: -4443003352951761036
+      tileset_main_11: -2642807797493501379
+      tileset_main_48: 5519471063124281643
+      tileset_main_10: 4073450209396934300
+      tileset_main_17: 4624603676838799469
+      tileset_main_8: 3173916134931876075
+      tileset_main_12: -7727342441139247179
+      tileset_main_5: -6491558727815771521
+      tileset_main_16: -6344847732045904330
+      tileset_main_18: 349858907341897017
+      tileset_main_64: -5103211633484436933
+      tileset_main_7: 3194434932749950196
+      tileset_main_49: 1148176970724092852
+      tileset_main_21: -7863911835781260557
+      tileset_main_57: -3316991344202401015
+      tileset_main_32: -6285651440861355910
+      tileset_main_50: 8620938584150666733
+      tileset_main_0: 7637027100310183001
+      tileset_main_54: -5212698761652466764
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
