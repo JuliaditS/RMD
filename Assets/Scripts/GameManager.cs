@@ -45,29 +45,31 @@ public class GameManager : MonoBehaviour
 
     public int getBintang(int levelNumber)
     {
-        //return PlayerPrefs.GetInt("SaveStars" + levelNumber);
+        return PlayerPrefs.GetInt("SaveStars" + levelNumber);
 
-        int bintang=0;
-        PlayFabClientAPI.GetUserData(new GetUserDataRequest(), 
-        result=>{
-            Debug.Log("Recieved user data!");
-            if (result.Data != null && result.Data.ContainsKey("SaveStars" + levelNumber))
-                bintang=int.Parse(result.Data["SaveStars" + levelNumber].Value);
-            else 
-                Debug.Log("No Data");
-        }, OnError);
-        return bintang;
+        // int bintang=0;
+        // PlayFabClientAPI.GetUserData(new GetUserDataRequest(), 
+        // result=>{
+        //     Debug.Log("Recieved user data!");
+        //     if (result.Data != null && result.Data.ContainsKey("SaveStars" + levelNumber))
+        //         bintang=int.Parse(result.Data["SaveStars" + levelNumber].Value);
+        //     else 
+        //         Debug.Log("No Data");
+        // }, OnError);
+        // return bintang;
     }
 
     public void SaveData(int levelNumber)
     {
-        //PlayerPrefs.SetInt("levelReach", levelNumber + 1);
-        //PlayerPrefs.SetInt("SaveUang", uang + PlayerPrefs.GetInt("SaveUang"));
-        //PlayerPrefs.SetInt("SaveStars" + levelNumber, getStars);
-        //PlayerPrefs.Save();
         int levelreach = levelNumber + 1;
         int saveuang = uang + PlayerPrefs.GetInt("SaveUang");
 
+        PlayerPrefs.SetInt("levelReach", levelreach);
+        PlayerPrefs.SetInt("SaveUang", saveuang);
+        PlayerPrefs.SetInt("SaveStars" + levelNumber, getStars);
+        PlayerPrefs.Save();
+        
+        //Playfabs save
         var request = new UpdateUserDataRequest {
             Data = new Dictionary<string, string>{
                 {"levelReach", levelreach.ToString()},
